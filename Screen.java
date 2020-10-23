@@ -10,15 +10,13 @@ import javax.swing.*;
 
 public class Screen extends JPanel implements Runnable, KeyListener {
 
-    //private static final long serialVersionUID = 1L;
-
     public static final int WIDTH = 400, HEIGHT = 400;
 
     private Thread thread;
     private boolean running = false;
 
-    private BodyPart body;
-    private ArrayList<BodyPart> snake;
+    private Body body;
+    private ArrayList<Body> snake;
 
     private Food food;
     private ArrayList<Food> foods;
@@ -91,7 +89,7 @@ public class Screen extends JPanel implements Runnable, KeyListener {
 
             ticks = 0;
 
-            body = new BodyPart(xCoor, yCoor, 10);
+            body = new Body(xCoor, yCoor, 10);
             snake.add(body);
 
             if(snake.size() > size) {
@@ -100,24 +98,24 @@ public class Screen extends JPanel implements Runnable, KeyListener {
         }
     }
 
-    public void paint(Graphics g) {
-        g.clearRect(0, 0, WIDTH, HEIGHT);
-        g.setColor(Color.BLACK);
-        g.fillRect(0, 0, WIDTH, HEIGHT);
+    public void paint(Graphics graph) {
+        graph.clearRect(0, 0, WIDTH, HEIGHT);
+        graph.setColor(Color.BLACK);
+        graph.fillRect(0, 0, WIDTH, HEIGHT);
 
-        g.setColor(Color.BLACK);
+        graph.setColor(Color.BLACK);
         for (int i = 0; i < WIDTH / 10; i++) {
-            g.drawLine(i * 10, 0, i * 10, HEIGHT);
+            graph.drawLine(i * 10, 0, i * 10, HEIGHT);
         }
         for (int i = 0; i < HEIGHT / 10; i++) {
-            g.drawLine(0, i * 10, WIDTH, i * 10);
+            graph.drawLine(0, i * 10, WIDTH, i * 10);
         }
 
         for (int i = 0; i < snake.size(); i++) {
-            snake.get(i).draw(g);
+            snake.get(i).draw(graph);
         }
         for(int i = 0; i < foods.size(); i++) {
-            foods.get(i).draw(g);
+            foods.get(i).draw(graph);
         }
 
     }
