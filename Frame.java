@@ -23,7 +23,7 @@ public class Frame
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
 
-        //}
+
 
     }
   
