@@ -11,10 +11,8 @@ public class Frame
     JFrame frame = new JFrame();
     Screen screen = new Screen();
 
-
     public Frame()
     {
-
             frame.add(screen);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setTitle("Snake");
@@ -22,15 +20,10 @@ public class Frame
             frame.pack();
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
-
-
-
     }
   
-    **/
     public static void main(String[] args)
     {
         Frame newFrame = new Frame();
     }
-
 }
