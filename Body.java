@@ -11,9 +11,6 @@ public class Body {
         width = tileSize;
         height = tileSize;
     }
-    public void tick()
-    {
-    }
     public void draw(Graphics graph) {
         graph.setColor(Color.WHITE);
         graph.fillRect(xCoor * width, yCoor * height, width, height);
