@@ -1,9 +1,16 @@
 # SnakeGame
 
-Introduction
+# Introduction
 
-This documentation serves to give you a comprehensive overview of my Snake game. This game is written in Java. Access to a keyboard with directional keys (UP, DOWN, LEFT, RIGHT) is required. More details about materials and programs needed can be found in the Materials section.
+This documentation serves to give you a comprehensive overview of my Snake game. This game is written in Java. Access to a keyboard with directional keys (UP, DOWN, LEFT, RIGHT) is needed. 
 
 
-Materials
+# Materials
 
+You will need a keyboard with working directional keys to properly play this game. A working internet connection is also needed in order to download the .jar file found in the SnakeGame repository. 
+
+
+# Installation
+
+1. Navigate to the SnakeGame GitHub page at this link: https://github.com/Coltinho10/SnakeGame
+![Download Location](/Users/coltonbailey/Desktop/github.png)
