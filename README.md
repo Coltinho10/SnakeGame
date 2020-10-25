@@ -54,7 +54,7 @@ This program was written using just four Java classes. Below will be a brief ove
 > You can find the source code [here](https://github.com/Coltinho10/SnakeGame)
 
 3. How can I contribute to this?
-> Feel free to download the source code and make any changes you would like! Download the source code using the steps shown above in the # Installation section, build the project in an IDE of your choice that supports Java and add, change, or remove anything of your choice! All I ask is that you send me your changes at this email: coltonbailey32@gmail.com so I can play your new game (and shamelessly add cool new things to my project). 
+> Feel free to download the source code and make any changes you would like! Download the source code using the steps shown above in the Installation section, build the project in an IDE of your choice that supports Java and add, change, or remove anything of your choice! All I ask is that you send me your changes at this email: coltonbailey32@gmail.com so I can play your new game (and shamelessly add cool new things to my project). 
 
 4. How can I contact you?
 > Email me here: coltonbailey32@gmail.com
