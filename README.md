@@ -36,7 +36,7 @@ You will need a keyboard with working directional keys to properly play this gam
 This program was written using just four Java classes. Below will be a brief overview of each. 
 
 1. Frame.java includes the main method and constructor. This is how we get the window to appear. 
-![Frame.java](https://github.com/Coltinho10/SnakeGame/blob/master/frame.png)
+![Frame.java](https://github.com/Coltinho10/DocumentationImages/blob/main/frame.png)
 
 2. Screen.java includes several methods to draw the screen, create the snake and apples, and holds the logic for running and stopping the game. 
 
