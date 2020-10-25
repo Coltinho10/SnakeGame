@@ -13,4 +13,6 @@ You will need a keyboard with working directional keys to properly play this gam
 # Installation
 
 1. Navigate to the SnakeGame GitHub page using this [link](https://github.com/Coltinho10/SnakeGame) 
+
+    Click the download code button, then select *Download ZIP*
 ![Download Location](https://github.com/Coltinho10/DocumentationImages/blob/main/github.png)
