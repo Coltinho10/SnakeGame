@@ -60,7 +60,7 @@ This program was written using just four Java classes. Below will be a brief ove
 > Email me here: coltonbailey32@gmail.com
 
 
-# Licensing
+# Legal
 
 Copyright 2020 Colton J. Bailey
 
