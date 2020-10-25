@@ -5,8 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyListener;
 
-public class Frame 
-{
+public class Frame {
     private boolean ready;
     JFrame frame = new JFrame();
     Screen screen = new Screen();
@@ -20,10 +19,12 @@ public class Frame
             frame.pack();
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
+
     }
-  
+
     public static void main(String[] args)
     {
         Frame newFrame = new Frame();
     }
+
 }

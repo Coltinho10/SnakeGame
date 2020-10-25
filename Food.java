@@ -11,10 +11,12 @@ public class Food {
         width = tileSize;
         height = tileSize;
     }
-    public void draw(Graphics graph) {
-        graph.setColor(Color.GREEN);
-        graph.fillRect(xCoor * width , yCoor * height, width, height);
+
+    public void draw(Graphics g) {
+        g.setColor(Color.GREEN);
+        g.fillRect(xCoor * width , yCoor * height, width, height);
     }
+
     public int getxCoor() {
         return xCoor;
     }
@@ -27,6 +29,5 @@ public class Food {
     public void setyCoor(int yCoor) {
         this.yCoor = yCoor;
     }
-
 }
 

@@ -10,6 +10,8 @@ import javax.swing.*;
 
 public class Screen extends JPanel implements Runnable, KeyListener {
 
+    //private static final long serialVersionUID = 1L;
+
     public static final int WIDTH = 400, HEIGHT = 400;
 
     private Thread thread;
@@ -38,15 +40,36 @@ public class Screen extends JPanel implements Runnable, KeyListener {
 
         rand = new Random();
 
-        snake = new ArrayList<BodyPart>();
+        snake = new ArrayList<Body>();
         foods = new ArrayList<Food>();
 
         start();
     }
 
+    public void paint(Graphics g) {
+        g.clearRect(0, 0, WIDTH, HEIGHT);
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, WIDTH, HEIGHT);
+
+        g.setColor(Color.BLACK);
+        for (int i = 0; i < WIDTH / 10; i++) {
+            g.drawLine(i * 10, 0, i * 10, HEIGHT);
+        }
+        for (int i = 0; i < HEIGHT / 10; i++) {
+            g.drawLine(0, i * 10, WIDTH, i * 10);
+        }
+
+        for (int i = 0; i < snake.size(); i++) {
+            snake.get(i).draw(g);
+        }
+        for(int i = 0; i < foods.size(); i++) {
+            foods.get(i).draw(g);
+        }
+    }
+
     public void tick() {
         if (snake.size() == 0) {
-            body = new BodyPart(xCoor, yCoor, 10);
+            body = new Body(xCoor, yCoor, 10);
             snake.add(body);
         }
         if(foods.size() == 0) {
@@ -96,28 +119,6 @@ public class Screen extends JPanel implements Runnable, KeyListener {
                 snake.remove(0);
             }
         }
-    }
-
-    public void paint(Graphics graph) {
-        graph.clearRect(0, 0, WIDTH, HEIGHT);
-        graph.setColor(Color.BLACK);
-        graph.fillRect(0, 0, WIDTH, HEIGHT);
-
-        graph.setColor(Color.BLACK);
-        for (int i = 0; i < WIDTH / 10; i++) {
-            graph.drawLine(i * 10, 0, i * 10, HEIGHT);
-        }
-        for (int i = 0; i < HEIGHT / 10; i++) {
-            graph.drawLine(0, i * 10, WIDTH, i * 10);
-        }
-
-        for (int i = 0; i < snake.size(); i++) {
-            snake.get(i).draw(graph);
-        }
-        for(int i = 0; i < foods.size(); i++) {
-            foods.get(i).draw(graph);
-        }
-
     }
 
     public void start() {

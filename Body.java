@@ -11,9 +11,10 @@ public class Body {
         width = tileSize;
         height = tileSize;
     }
-    public void draw(Graphics graph) {
-        graph.setColor(Color.WHITE);
-        graph.fillRect(xCoor * width, yCoor * height, width, height);
+
+    public void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.fillRect(xCoor * width, yCoor * height, width, height);
     }
     public int getxCoor() {
         return xCoor;
@@ -27,5 +28,4 @@ public class Body {
     public void setyCoor(int yCoor) {
         this.yCoor = yCoor;
     }
-
 }
