@@ -7,7 +7,7 @@ This documentation serves to give you a comprehensive overview of my Snake game.
 
 # Materials
 
-You will need a keyboard with working directional keys to properly play this game. A working internet connection is also needed in order to download the .jar file found in the SnakeGame repository. 
+You will need a keyboard with working directional keys to properly play this game. A working internet connection is also needed in order to download the `.jar` file found in the SnakeGame repository. 
 
 
 # Installation
